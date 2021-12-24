@@ -2,6 +2,11 @@
 
 using namespace std;
 
+template <typename com>
+com mySwap(com &,com & );
+
+
+
 int main(){
 	int x, y;
 	string a, b;
@@ -28,5 +33,18 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+template <typename com>
+com mySwap(com &N , com &M){
+
+     com C = N;
+	 com D = M;
+
+	 N = D;
+     M = C;
+	 return M;
+	 return N;
+	
 }
 
